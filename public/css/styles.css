@@ -1,0 +1,819 @@
+:root {--yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif;}
+
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Roboto', sans-serif;
+      background-color: #ebebeb;
+    }
+/*================ HEADER ================*/
+header{
+
+      background-color: #EAC926;
+      font-family: 'Roboto', sans-serif;
+      top: 0px;
+      }
+
+header.main-header{
+        background-color: #EAC926;
+        padding-top: 10px;
+        padding-bottom: 0px;
+
+    }
+
+.main-header-top{
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2px;
+      }
+
+.logo{
+    display: flex;
+    position: absolut;
+    width: 30%;
+  }
+
+.search{
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  font-size: 10px;
+  align-self: center;
+  margin-top: 12px;
+  margin-left: 10px;
+  }
+
+.logo, .search{
+  flex-grow:1;
+}
+.cuotas{
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.burger{
+display: flex;
+justify-content: center;
+}
+
+    .burger-menu{
+      text-align: center;
+    }
+    
+    .burger-menu i{
+      background-color: #0044AA;
+      border-radius: 5px;
+      color: #FFF;
+      font-size: 20px;
+      height: 40px;
+      margin: 10px 0px 20px 0px;
+      padding: 10px;
+      width: 40px;
+      }
+
+
+    .main-navbar{
+      display: none;
+    }
+
+    .main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .main-navbar a{
+      text-decoration: none;
+      color: black;
+      display: inline-block;
+      padding: 5px 0px;
+      font-size: 17px;
+    }
+
+    
+/*================ MAIN ================*/
+
+    main{
+      width: 90%;
+      margin: 0 auto;
+  }
+    main section h3{
+    margin: 20px 0px;
+    font-size: 24px;
+    color: #666;
+    }
+
+  main section article img{
+    width: 100%;
+}
+
+main section article{
+  margin: 10px 0px;
+
+}
+.main-article{
+  border: solid 1px #ebebeb;
+  width: 100%;
+  padding: 15px;
+  background-color: #FFF;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.main-article i{
+  font-size: 16px;
+  color: #39b54a;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  right: 20px;
+  top: -15px;
+  display: block;
+  position: absolute;
+  
+} 
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+    color:var(--green);
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+.products{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+/*================ FOOTER ================*/
+.main-footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+
+.footer-data {
+  text-align: center;
+}
+
+.footer-data i {
+  color: var(--light-blue);
+  font-size: 2em;
+  padding: 10px 0;
+}
+
+.footer-data h2 {
+  color: var(--gray);
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.footer-data p {
+  color: var(--gray);
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.sub-footer {
+  border-top: 1px solid var(--light-gray);
+  background-color: #ffffff;
+}
+
+.sub-footer p {
+  margin: 0;
+  color: var(--gray);
+  padding: 15px 0;
+}
+
+/*================ REGISTER ================*/
+
+form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+form h2{
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  font-weight: 500px;
+}
+
+form input{
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 12x;
+  font-style: italic;
+  color: var(--gray);
+  align-items: center;
+  justify-content: center;
+  height: 23px;
+}
+
+h6{
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: var(--gray);
+}
+
+h5{
+  margin-top: 15px;
+  font-size: 14px;
+  color:var(--gray);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+h4{
+  margin-top: 15px;
+  font-size: 14px;
+  color:var(--gray);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+h3{
+  margin-top: 15px;
+  font-size: 14px;
+  color:var(--gray);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: var(--gray);
+  align-items: center;
+
+}
+
+.interests-1{
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  width: auto;
+}
+
+.register-but{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-self: center;
+  justify-content: space-around;  
+}
+
+.submit, .reset{
+  background-color: #0044AA;
+  color: white;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 5%;
+}
+
+label, input{
+  font-size: 10px;
+  color: var(--gray);
+  align-items:flex-end;
+  margin-bottom: 1px;
+}
+
+.pswd{
+  margin-bottom: 20px;
+}
+
+input: invalid{
+  border: 2px dashed red
+
+}
+
+
+
+/*================ MEDIA ================*/
+    @media (min-width:768px){
+
+      .header-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+      }
+      
+      .main-header-top{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .logo{
+        display: flex;
+        width: 180px;
+        margin-right: 50px;
+        margin-left: 20px;
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+       
+      }
+      
+      .wrap{
+     display: flex;
+      
+      } 
+      .search{
+        display: flex;
+        font-size: 12px;
+        align-self: center;
+        margin-bottom: 20px;
+       
+      }
+
+      input{
+        width: 220px;
+      }
+      
+      .cuotas{
+        display: flex; 
+        font-size: 12px;
+        margin-right: 10px;
+        margin-bottom: 35px;
+        align-self: center;
+ 
+      }
+      .burger-menu{
+        display: none;
+      }
+      .main-navbar{
+        display: flex;
+        justify-content: space-between;
+      
+      }
+      .main-navbar ul{
+        display: flex;
+      }
+      .main-navbar li{
+        margin: 0 5px;
+        font-size: 12px;
+      }
+
+      .nav-usuario li{
+        margin: 0 5px;
+        font-size: 12px;
+      }
+      
+      .description{
+        display:flex;
+      }
+     .product-data{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%; /*p/ q entren 4 imagenes, las achico*/
+      }
+      .main-footer {
+        padding: 40px 0;
+    }
+    
+    .footer-data {
+        width: 95%;
+        margin: auto;
+    }
+  
+  
+    .footer-data i {
+        color: var(--light-blue);
+        font-size: 2.5em;
+    }
+      
+    .footer-data h2 {
+        color: var(--gray);
+        font-size: 2em;
+        font-weight: 400;
+    }
+      
+    .footer-data p {
+        color: var(--gray);
+        font-size: 1.2em;
+        font-weight: 300;}
+
+
+form{
+          margin-top: 10px;
+          display: flex;
+          align-items: baseline;
+      }
+
+form h2{
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  font-weight: 500px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+form input{
+  display: flex;
+  margin-bottom: 15px;
+  width: 60%;
+  font-size: 12px;
+  font-style: italic;
+  text-align:left;
+  color: var(--gray);
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border: #666666;
+  border-radius: 5%;
+}
+
+
+form h6{
+ 
+  margin-bottom: 3px;
+  margin-right: 280px;
+  font-size: 12px;
+  color: var(--gray);
+}
+
+form h5{
+  margin-top: 15px;
+  font-size: 16px;
+  color:var(--gray);
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-right: 260px; 
+}
+.profile{
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  width: 20%;
+  max-width: 1200px;
+  margin: 0 20px;
+ }
+
+input[type="radio"]{
+  width: initial;
+  justify-content: space-between;
+ 
+}
+
+[for="sell"]{ 
+  font-size: 11px;
+  height: 30px;
+  margin-left: 2px;
+}
+
+[for="buy"]{ 
+  font-size: 11px;
+  height: 30px;
+  margin-left: 2px;
+  margin-right: 30px;
+}
+
+form h4{
+  margin-top: 15px;
+  font-size: 16px;
+  color:var(--gray);
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-right: 320px; 
+}
+
+
+
+.interests-1{
+  display: flex;
+  flex-direction: row;
+  width: initial;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.interests{
+ display: flex;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 1px;
+  font-size: 20 px;
+}
+
+input[type="checkbox"]{
+  justify-content: space-between;
+  height: auto;
+  margin-right: 1px;
+}
+
+.interests-1 label{
+  font-size: 12px;
+ 
+}
+
+.register-but{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-self: center;
+  position: relative;
+}
+
+form h3{
+  margin-top: 15px;
+  font-size: 16px;
+  color:var(--gray);
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-right: 198px; 
+}
+
+.attachment{
+  width:100%;
+  margin-right: 170px; 
+  }
+
+.pswd h5{
+    margin-bottom: 8px;
+    margin-right: 290px;
+   }
+ 
+.register-but{
+display: flex;
+flex-direction: row;
+
+}
+
+input[type="submit"]{
+  display: flex;
+  width: initial;
+  margin-right: 20px;
+ padding-bottom: 20px;
+}
+ 
+
+input[type="reset"]{
+  display: flex;
+  width: initial;
+  margin-right: 20px;
+ padding-bottom: 20px;
+}
+
+ /*!!!!!!MEDIA 1200!!!!!!!!!!!*/   
+
+@media (min-width: 1200px){
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  width:300px;
+  margin-right: 80px;
+  margin-left: 10px;
+  align-self: center;
+ 
+}
+
+.wrap{
+margin-right: 10px;
+
+} 
+.search{
+  display: flex;
+
+}
+
+input{
+  width: 350px;
+  font-size: 20px;
+}
+
+.cuotas{
+  display: flex; 
+  font-size: 18px;
+  margin-right: 10px;
+  align-self: center;
+ 
+}
+
+
+      .main-navbar{
+        position: relative;
+        display: flex;
+       }
+  
+      .main-navbar{
+        margin-top: 10px;
+      }
+      .main-navbar li{
+        margin: 0 10px;
+      }
+      .main-navbar a{
+        font-size: 19px;
+      }
+      .product-data{
+        width: 20%; /*p/ q entren 4 imagenes, las achico*/
+      }
+
+      
+      form{
+        margin-top: 10px;
+        display: flex;
+        align-items: baseline;
+    }
+    
+      
+      form h2{
+        color: var(--gray);
+        font-size: 25px;
+        font-weight: 400;
+        text-align: left;
+        font-weight: 500px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+      }
+      
+      form input{
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-style: italic;
+        color: var(--gray);
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+      }
+      h6{
+        margin-bottom: 5px;
+        margin-right: 480px;
+        font-size: 16px;
+        color: var(--gray);
+      }
+      h5{
+        margin-top: 15px;
+        font-size: 16px;
+        color:var(--gray);
+        font-weight: 500;
+        margin-bottom: 15px;
+        margin-right: 500px; 
+      }
+
+      h4{
+        margin-top: 15px;
+        font-size: 16px;
+        color:var(--gray);
+        font-weight: 500;
+        margin-bottom: 15px;
+        margin-right: 560px; 
+      } 
+   
+
+      .profile{
+        display: flex;
+        box-sizing: border-box;
+        margin: 0;
+        width: 20%;
+        max-width: 1200px;
+        margin: 0 20px;
+       }
+      
+       nput[type="radio"]{
+        width: initial;
+        justify-content: space-between;
+      }
+      
+      [for="sell"]{ 
+        font-size: 14px;
+        height: 30px;
+      }
+      
+      [for="buy"]{ 
+        font-size: 14px;
+        height: 30px;
+      }
+      .interests-1{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      
+      .interests{
+       display: flex;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 1px;
+        font-size: 20 px;
+      }
+      
+      .register-but{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        align-self: center;
+        position: relative;
+      }
+      
+    
+      
+      h3{
+        margin-top: 15px;
+        font-size: 16px;
+        color:var(--gray);
+        font-weight: 500;
+        margin-bottom: 15px;
+        margin-right: 198px; 
+      }
+      
+      .attachment{
+        width:100%;
+        margin-right: 170px; 
+        }
+      
+        .pswd H5{
+          margin-bottom: 20px;
+          margin-right: 290px;
+        
+        }
+        
+      
+      input [type="submit"]{
+        background-color: #0044AA;
+        color: white;
+        width: auto;
+        font-size: 14px;
+        padding-top: 10px;
+        margin  -bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        border-radius: 5%;
+      }
+      
+      
+      input: invalid{
+        border: 2px dashed red
+      }
+    }
