@@ -22,13 +22,16 @@ header{
       background-color: #EAC926;
       font-family: 'Roboto', sans-serif;
       top: 0px;
+      z-index:1000;
+      width: 100%;
       }
 
 header.main-header{
         background-color: #EAC926;
         padding-top: 10px;
         padding-bottom: 0px;
-
+        position: fixed;
+        top: 0px;
     }
 
 .main-header-top{
@@ -46,6 +49,10 @@ header.main-header{
     width: 30%;
   }
 
+  .banner{
+padding-top: 187.5px;
+
+  }
 .search{
   justify-content: space-between;
   position: relative;
@@ -54,6 +61,7 @@ header.main-header{
   align-self: center;
   margin-top: 12px;
   margin-left: 10px;
+  margin-right: 2px;
   }
 
 .logo, .search{
@@ -109,13 +117,15 @@ justify-content: center;
 /*================ MAIN ================*/
 
     main{
-      width: 90%;
+      width: 100  %;
       margin: 0 auto;
+      
   }
     main section h3{
-    margin: 20px 0px;
-    font-size: 24px;
+    margin: 20px 15px;
+    font-size: 20px;
     color: #666;
+  
     }
 
   main section article img{
@@ -150,24 +160,30 @@ main section article{
   right: 20px;
   top: -15px;
   display: block;
-  position: absolute;
-  
+  position: absolute;  
+  transition: all 450ms;
 } 
 
-div.last-visit,
-div.offers{
+
+
+.ultima-visita, .offertas{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+  
 }
 
 .price{
     font-size: 18px;
     width: 30%;
+    position: relative;
 }
 
 .discount{
     width: 70%;
     color:var(--green);
+    position: relative;
+    left: 20px;
 }
 
 .discount,
@@ -182,9 +198,11 @@ h3,
 }
 
 .description{
-    display: none;
+  display: none;
     margin-top: 20px;
 }
+
+
 .products{
   display: flex;
   flex-direction: row;
@@ -210,13 +228,13 @@ h3,
 
 .footer-data h2 {
   color: var(--gray);
-  font-size: 1.5em;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .footer-data p {
   color: var(--gray);
-  font-size: 1em;
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -226,15 +244,16 @@ h3,
 }
 
 .sub-footer p {
-  margin: 0;
+  margin-left: 15px;
   color: var(--gray);
   padding: 15px 0;
+  font-size: 10px;
 }
 
-/*================ REGISTER ================*/
+/*================ FORMULARIOS ================*/
 
 form{
-  margin-top: 20px;
+  margin-top: 185px;
   display: flex;
   flex-direction: column;
 
@@ -314,7 +333,7 @@ h3{
 }
 
 .submit, .reset{
-  background-color: #0044AA;
+  background-color:var(--green);
   color: white;
   font-size: 14px;
   padding-top: 10px;
@@ -323,6 +342,7 @@ h3{
   padding-right: 15px;
   border: none;
   border-radius: 5%;
+  position: relative;
 }
 
 label, input{
@@ -336,20 +356,36 @@ label, input{
   margin-bottom: 20px;
 }
 
-input: invalid{
-  border: 2px dashed red
 
+
+
+.login-but{
+  display: flex;
+  transition: all 450ms;
 }
 
+.login-but :hover{
+  background-color: #0022AA;
+}
 
+input[value="ENVIAR"]{
+ height: 30px;
+}
 
 /*================ MEDIA ================*/
+
     @media (min-width:768px){
+
+      .main-header{
+        width: 100%;
+        z-index: 1000;
+      }
 
       .header-top{
         display: flex;
         justify-content: space-between;
-        align-items: center
+        align-items: center;
+  
       }
       
       .main-header-top{
@@ -404,26 +440,33 @@ input: invalid{
       }
       .main-navbar ul{
         display: flex;
+        font-size: 10px;
       }
       .main-navbar li{
         margin: 0 5px;
-        font-size: 12px;
       }
 
       .nav-usuario li{
         margin: 0 5px;
-        font-size: 12px;
+        font-size: 10px;
+      }
+
+      .nav-ventas li{
+        margin: 0 5px;
+        font-size: 10px;
       }
       
       .description{
-        display:flex;
-      }
+        display:block;
+}
+
      .product-data{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%; /*p/ q entren 4 imagenes, las achico*/
       }
+
+    
       .main-footer {
-        padding: 40px 0;
+        padding: 10px 0;
     }
     
     .footer-data {
@@ -439,18 +482,18 @@ input: invalid{
       
     .footer-data h2 {
         color: var(--gray);
-        font-size: 2em;
+        font-size: 12px;
         font-weight: 400;
     }
       
     .footer-data p {
         color: var(--gray);
-        font-size: 1.2em;
+        font-size: 10px;
         font-weight: 300;}
 
 
 form{
-          margin-top: 10px;
+          margin-top: 130px;
           display: flex;
           align-items: baseline;
       }
@@ -593,6 +636,7 @@ form h3{
 .register-but{
 display: flex;
 flex-direction: row;
+position: relative;
 
 }
 
@@ -600,7 +644,7 @@ input[type="submit"]{
   display: flex;
   width: initial;
   margin-right: 20px;
- padding-bottom: 20px;
+  padding-bottom: 20px;
 }
  
 
@@ -608,12 +652,28 @@ input[type="reset"]{
   display: flex;
   width: initial;
   margin-right: 20px;
- padding-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+
+.login{
+  display: flex;
+  align-items: center;
+  width: auto;
+
+}
+
+.banner{
+  padding-top: 126px;
 }
 
  /*!!!!!!MEDIA 1200!!!!!!!!!!!*/   
 
 @media (min-width: 1200px){
+
+header{
+  z-index: 1000;
+}
 
 .header-top{
   display: flex;
@@ -635,6 +695,10 @@ input[type="reset"]{
  
 }
 
+.banner{
+  padding-top: 171px;
+}
+
 .wrap{
 margin-right: 10px;
 
@@ -654,10 +718,7 @@ input{
   font-size: 18px;
   margin-right: 10px;
   align-self: center;
- 
-}
-
-
+ }
       .main-navbar{
         position: relative;
         display: flex;
@@ -676,9 +737,12 @@ input{
         width: 20%; /*p/ q entren 4 imagenes, las achico*/
       }
 
-      
+      .main-article{
+        height: 150px ;
+      }
+
       form{
-        margin-top: 10px;
+        margin-top: 180px;
         display: flex;
         align-items: baseline;
     }
@@ -798,22 +862,71 @@ input{
         
         }
         
-      
+        .register-but {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 15px;
+          margin-left: 25px;
+          align-self: self-start;
+          position: relative;
+      }
+
       input [type="submit"]{
         background-color: #0044AA;
         color: white;
         width: auto;
         font-size: 14px;
         padding-top: 10px;
-        margin  -bottom: 15px;
+        margin-bottom: 15px;
         padding-left: 15px;
         padding-right: 15px;
         border: none;
         border-radius: 5%;
       }
       
-      
-      input: invalid{
-        border: 2px dashed red
+    main section article div .description{
+        display: block;
+        visibility: hidden;
+        transition: all 0.5s;
       }
-    }
+
+    main section article div:hover .description{
+        display: block;
+        visibility: visible;
+      }
+
+      .product-data{
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
+        transition: all 450ms;
+      }
+
+      .product-data:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+
+       
+      article :hover i{
+          transform: rotateZ(-90deg);
+        }
+
+      footer{
+        font-size: 16px;
+      }    
+
+        footer article i {
+          color: var(--light-blue);
+          font-size: 2.5em;
+          transition: all 450ms;
+      }
+
+        footer article:hover i{
+          color:#39b54a;
+        }
+
+        .copyright { margin-left: 15px;}
+
+        footer{
+          width: 100%;
+        }
+
+
+
